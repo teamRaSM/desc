@@ -1,0 +1,195 @@
+body, html{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Hero*/
+
+#teamname{
+	font-family: 'Courgette', cursive;
+	/*font-family: 'Rock Salt', cursive;*/
+	font-size: 4em;
+	color: #fff;
+	transition: font-size .3s;
+
+}
+
+#hero{
+	position: relative;
+	width: 100%;
+	height: 75vh;
+	background-image: url('../images/teampic.jpg');
+	background-size: cover;
+	overflow-y: hidden;
+	background-attachment: fixed;
+	transition: background-position .3s;
+}
+#herotext{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	padding-top: 50px;
+	justify-content: center;
+}
+/*HERO*/
+
+/*Small Cont*/
+
+.smallcont{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 2em;
+	width: 80%;
+	text-align: center;
+	min-height: 10vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Small Cont*/
+
+#tell-meet{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 1.3em;
+	width: 80%;
+		margin-left: auto;
+	margin-right: auto;
+}
+
+.teamember{
+	width: 100%;
+}
+.mem-pack{
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.mem{
+	height: 100vh;
+	overflow-y: hidden;
+	position: relative;
+}
+.mem-pic{
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	z-index: -1;
+}
+.mem-name{
+	color: #fff;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	font-family: 'Kalam', cursive;
+	font-size: 3em;
+}
+.megha{
+	background-image: url('../images/megha.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px -80vh;
+}
+.shubh{
+	background-image: url('../images/shubh.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+		background-position: 0px -30vh;
+}
+.ranjitha{
+	background-image: url('../images/ranjitha.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+		background-position: 0px -10vh;
+		height: 100vh !important;
+}
+.soorya{
+	background-image: url('../images/soorya.jpeg');
+	background-position: 0px -30vh;
+}
+.prasanth{
+	background-image: url('../images/sai.jpg');
+}
+.sandeep{
+	background-image: url('../images/sandeep1.jpg');	
+}
+@media only screen and (max-width: 563px){
+	#teamname{
+		font-size: 3em;
+	}
+	#hero{
+		background-position:  -100px 0px;
+	}
+}
+
+
+@media only screen and (max-width: 630px){
+	.ranjitha{
+		background-position: 0px 0vh;
+	}
+}
+
+@media only screen and (max-width: 1080px){
+	.megha{
+		background-position: 0px -60vh;
+	}
+}
+
+@media only screen and (max-width: 960px){
+	.megha{
+		background-position: 0px -40vh;
+	}
+}
+@media only screen and (max-width: 610px){
+	.megha{
+		background-position: 0px -20vh;
+	}
+}
+@media only screen and (max-width: 480px){
+	.megha{
+		background-position: 0px 0vh;
+	}
+	.ranjitha{
+		background-position: -10vh 0vh;
+	}
+	.sandeep{
+		background-position: -10vh 0vh;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.sandeep{
+		background-position: -15vh 0vh;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.sandeep{
+		background-image: url('../images/sandeep.jpg');
+	}
+	.shubh{
+		background-position: 0vh 0vh;
+	}
+	.soorya{
+		background-position: 0vh 0vh;
+	}
+}
+@media only screen and (max-width: 470px){
+	.shubh{
+		background-position: -20vh 0vh;
+	}
+}
+
+@media only screen and (max-width: 630px){
+	.prasanth{
+		background-position: -50vh 0vh;
+	}
+}
