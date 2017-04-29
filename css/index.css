@@ -193,3 +193,149 @@ body, html{
 		background-position: -50vh 0vh;
 	}
 }
+
+
+
+
+/*Try*/
+
+.parallax{
+	perspective: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 100vh;
+	transform-style: preserve-3d;
+}
+
+.parallax-group{
+	height: 100vh;
+	position: relative;
+	transform-style: preserve-3d;
+}
+.parallax-base{
+	font-size: 200%;
+	transform: translateZ(-100px) scale(2);
+	position: absolute;
+	top: 0;
+	transform-style: preserve-3d;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.head{
+	background-color: #fff;
+	z-index: 5;
+}
+
+.parallax-fore{
+	transform-style: preserve-3d;
+		position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transform:translateZ(0px);
+}
+.center{
+	text-align: center;
+}
+.meet{
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	z-index: 5;
+	background-color: #fff;
+}
+.megha1{
+	z-index: -2;
+	position: relative;
+	transform:translateZ(-100px);
+
+	background-image: url('../images/megha.jpg');	
+}
+.meghapic{
+
+	position: absolute;
+	background-size: cover;
+		top: 0px;
+		width: 50vw;
+	bottom: 0px;
+}
+.about{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	height: 100vh;
+	position: absolute;
+	right: 0;
+	width: 20%;
+}
+.parallax-mid{
+	position: absolute;
+	font-size: 200%;
+	color: #aaa;
+	transform:translateZ(-50px) scale(1);
+}
+.shubhpic{
+	z-index:-1;
+	position: absolute;
+	background-size: cover;
+		top: 0px;
+		height: 100%;
+		width: 50vw;
+	bottom: 0px;
+	overflow-x: hidden;
+	background-image: url('../images/shubh.jpg');	
+}
+.parallax-group {
+    transform: translate3d(700px, 0, -800px) rotateY(30deg);
+}
+.ranjpic{
+	position: absolute;
+	background-size: cover;
+		top: 0px;
+		width: 50vw;
+	bottom: 0px;
+	overflow-x: hidden;
+	transform: translateZ(30px);
+	transform-style: preserve-3d;
+	background-image: url('../images/ranjitha.jpg');	
+}
+.ranj1{
+
+}
+.sooryapic{
+	z-index: 1;
+	position: absolute;
+	background-size: cover;
+		top: 0px;
+		width: 50vw;
+	bottom: 0px;
+	overflow-x: hidden;
+	background-image: url('../images/soorya.jpeg');	
+}
+.saipic{
+	z-index: 1;
+	position: absolute;
+	background-size: cover;
+		top: 0px;
+		width: 50vw;
+	bottom: 0px;
+	overflow-x: hidden;
+	background-image: url('../images/sai.jpg');	
+}
+.sandypic{
+	z-index: 1;
+	position: absolute;
+	background-size: cover;
+		top: 0px;
+		width: 50vw;
+	bottom: 0px;
+	overflow-x: hidden;
+	background-image: url('../images/sandeep.jpg');	
+}
+@media only screen and (max-width: 767px){
+	.meghapic{
+		background-position: -40vh 0px;
+	}
+}
+/*try*/

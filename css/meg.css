@@ -1,0 +1,169 @@
+body, html{
+	margin:0px;
+	padding: 0px;
+	font-family: 'Satisfy', cursive;
+}
+#teamname{
+	position: absolute;
+	z-index: 50;
+	top: 50px;
+	display: inline-block;
+	padding-left: 30vw;
+	font-size: 3em;
+	color: white
+	
+}
+#wish{
+	position: absolute;
+	top: 150px;
+	z-index: 50;
+	padding-left: 30vw;
+	color: white;
+	font-size: 3em;
+}
+body{
+	perspective: 300px;
+	transform-style: preserve-3d;
+
+}
+.fullscreen{
+	transform-style: preserve-3d;
+		/*transform: rotateY(30deg) translateX(600px) translateZ(-500px);*/
+	height: 100vh;
+	width: 100vw;
+		background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px -80vh;
+	/*background-attachment: fixed;*/
+	z-index: 1;
+	animation: megpic 30s infinite;
+	transition: background-image .5s;
+	background-image: url('../images/meg0.jpg');
+}
+.flex{
+	display: flex;
+}
+/*.fore{
+
+	background-color: grey;
+	z-index: 5;
+	height: 50vh;
+	transform: translateZ(10px);
+	/*transform: rotateY(30deg) translateX(600px) translateZ(-400px); 
+}*/
+.fl-center{
+	justify-content: center;
+	align-items: center;
+}
+.fl-row{
+	flex-direction: row;
+}
+.fl-column{
+	flex-direction: column;
+}
+.same{
+	height: 1.5em;
+	font-size: 5em;
+	color: white;
+	overflow: hidden;
+}
+.move{
+	
+	flex-wrap: wrap;
+	overflow: hidden;
+	transition: transform .3s;
+	height: 100%;
+}
+.mar-right{
+	margin-right: 10px;
+}
+.name{
+	font-family: 'Satisfy', cursive;
+}
+.hap{
+	transform: translateZ(100px);
+}
+.switch{
+	transform: translateZ(100px);
+}
+/*.hap{
+	border-left-width: 5px;
+	border-left-color: white;
+	border-left-style: solid;
+}*/
+/*.switch{
+	border-right-width: 5px;
+	border-right-color: white;
+	border-right-style: solid;
+}*/
+.border{
+	border-width: 5px;
+	border-color: white;
+	border-style: solid;
+}
+
+@media only screen and (max-width: 1080px){
+	.fullscreen{
+		background-position: 0px -60vh;
+	}
+}
+
+@media only screen and (max-width: 960px){
+	.fullscreen{
+		background-position: 0px -40vh;
+	}
+}
+@media only screen and (max-width: 610px){
+	.fullscreen{
+		background-position: 0px -20vh;
+	}
+}
+@media only screen and (max-width: 480px){
+	.fullscreen{
+		background-position: 0px 0vh;
+	}
+}
+@media only screen and (max-width: 480px){
+	.same{
+		height: 1.5em;
+		font-size: 2.5em;
+	}
+}
+
+@keyframes megpic{
+	0%{
+		background-image: url('../images/meg0.jpg');
+	}
+	20%{
+		background-image: url('../images/meg0.jpg');
+	}
+	25%{
+		background-image: url('../images/meg1.jpg');
+		/*background-position: 0px -0px;*/
+
+	}
+	45%{
+		background-image: url('../images/meg1.jpg');
+		background-position: 0px -50vh;
+	}
+	50%{
+		background-image: url('../images/meg2.jpg');
+		background-position: 0px -0px;
+	}
+	70%{
+				background-image: url('../images/meg2.jpg');
+		background-position: 0px -0px;
+	}
+	75%{
+		background-image: url('../images/meg3.jpg');
+		background-position: 0px -0px;
+	}
+	95%{
+				background-image: url('../images/meg3.jpg');
+		background-position: 0px -0px;
+	}
+	100%{
+		background-image: url('../images/meg4.jpg');
+		background-position: 0px -0px;
+	}
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Megha</title>
+		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/meg.css">
+	</head>
+
+	<body>
+	<p id="teamname">Team RaSSM</p>
+	<p id="wish">wishes</p>
+		<div class="fullscreen flex fl-center fl-row">
+			<div class="same mar-right hap">Happy</div><div class="same switch"><div class="move">Birthday</div><div class="move name">Megha</div><div class="move">Day</div><div class="move">You</div></div>
+		</div>
+		<div class="fore">
+			
+		</div>
+		<audio src="song.mp3" autoplay="trues"></audio>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+var count = 0;
+setInterval(function(){
+	count = (count+1)%4;
+	// $('.fullscreen').css({'background-image':'url("../images/meg0.jpg"'});
+	$('.move').css({'transform':'translateY(-'+count*100+'%)'});
+},3000)
+</script>
+</html>
